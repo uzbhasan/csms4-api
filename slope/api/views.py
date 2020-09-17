@@ -110,13 +110,13 @@ class ExpertImageDetail(APIView):
         serializer = ExpertImageSerializer(image)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    def put(self, request, pk, format=None):
-        image = get_expert_image_object(pk)
-        serializer = ExpertImageSerializer(image, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    # def put(self, request, pk, format=None):
+    #     image = get_expert_image_object(pk)
+    #     serializer = ExpertImageSerializer(image, data=request.data)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #         return Response(serializer.data, status=status.HTTP_200_OK)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
         image = get_expert_image_object(pk)
@@ -161,13 +161,13 @@ class DModelDetail(APIView):
         serializer = DModelSerializer(model)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    def put(self, request, pk, format=None):
-        model = get_d_model_object(pk)
-        serializer = DModelSerializer(model, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    # def put(self, request, pk, format=None):
+    #     model = get_d_model_object(pk)
+    #     serializer = DModelSerializer(model, data=request.data)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #         return Response(serializer.data, status=status.HTTP_200_OK)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
         model = get_d_model_object(pk)
@@ -263,13 +263,13 @@ class OrderImageDetail(APIView):
         serializer = OrderImageSerializer(image)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    def put(self, request, pk, format=None):
-        image = get_order_image_object(pk)
-        serializer = OrderImageSerializer(image, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    # def put(self, request, pk, format=None):
+    #     image = get_order_image_object(pk)
+    #     serializer = OrderImageSerializer(image, data=request.data)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #         return Response(serializer.data, status=status.HTTP_200_OK)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
         image = get_order_image_object(pk)
