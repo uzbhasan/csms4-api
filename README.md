@@ -44,7 +44,7 @@ python manage.py createsuperuser
 3. Slope
    - GET:
       - Get all slopes: ``/slope/``
-      - Retrieve: ``slope/<id>``
+      - Retrieve: ``/slope/<id>``
    - POST:
       - Create a new: ``/slope/``
    - PUT:
