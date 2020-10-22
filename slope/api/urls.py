@@ -5,9 +5,9 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = format_suffix_patterns([
     # Account registration
-    path('', views.SlopeList.as_view(), name='slope-cr'),
-    path('<int:pk>', views.SlopeDetail.as_view(), name='slope-rud'),
-    path('delete/<int:pk>', views.SlopeForceDelete.as_view(), name='slope-delete'),
+    path('slope/', views.SlopeList.as_view(), name='slope-cr'),
+    path('slope/<int:pk>', views.SlopeDetail.as_view(), name='slope-rud'),
+    path('slope/delete/<int:pk>', views.SlopeForceDelete.as_view(), name='slope-delete'),
     path('expert-image/', views.ExpertImageList.as_view(), name='expert-image-cr'),
     path('expert-image/<int:pk>', views.ExpertImageDetail.as_view(), name='expert-image-rud'),
     path('expert-image/delete/<int:pk>', views.ExpertImageForceDelete.as_view(), name='expert-image-delete'),

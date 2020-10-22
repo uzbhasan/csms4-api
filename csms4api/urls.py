@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/company/', include('company.api.urls')),
     path('api/account/', include('account.api.urls')),
-    path('api/slope/', include('slope.api.urls')),
+    path('api/', include('slope.api.urls')),
 ]
 
 if settings.DEBUG:
